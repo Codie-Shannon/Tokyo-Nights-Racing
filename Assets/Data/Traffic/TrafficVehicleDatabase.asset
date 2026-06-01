@@ -1,0 +1,351 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad17f1b1ba3865543a9bfb442c8344d2, type: 3}
+  m_Name: TrafficVehicleDatabase
+  m_EditorClassIdentifier: 
+  vehicles:
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 4068872209232238439, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 6518163323699402250, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 3582114736180257660, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 4968953814894308473, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 7375400363482202754, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 6680571464671683847, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 1678699276425158921, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop 1
+    trafficPrefab: {fileID: 4117996046822941491, guid: 527379b0da4de1447b939d42c857a090, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1 1
+    trafficPrefab: {fileID: 5857553285701235110, guid: 89d9acbdf81fb124ca80c7e96d88d3a9, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2 1
+    trafficPrefab: {fileID: 8574527188055599262, guid: cf063db148e040e488c92d4c3a001122, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar 1
+    trafficPrefab: {fileID: 9190570095417572745, guid: 75bd3c174dd3cea42b6ece61ab6200a0, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2 1
+    trafficPrefab: {fileID: 1567723869954084107, guid: 8fc7fea82d783b04baf15f9cd92ca2d9, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV 1
+    trafficPrefab: {fileID: 6111333024275041662, guid: c9601302af1be3f4ea504c73d9247c48, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi 1
+    trafficPrefab: {fileID: 348924261464029940, guid: c6f89d108c6f5644cb586260f4f60de6, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop 2
+    trafficPrefab: {fileID: 988595492463161588, guid: 51e5a17eb05026248845502770c9b542, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1 2
+    trafficPrefab: {fileID: 7330165198201381519, guid: ec11c7ccac5adc742aa351ad208e75f5, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2 2
+    trafficPrefab: {fileID: 828082987253086500, guid: edcbf44de12860e4f8d0bbefa86ccc6e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar 2
+    trafficPrefab: {fileID: 8683219540152433561, guid: ead7c797eee25fc44b1d720a953d0d88, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2 2
+    trafficPrefab: {fileID: 6933147149671363300, guid: f598c26fe6eb56d449d51bfec501599f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV 2
+    trafficPrefab: {fileID: 1095957233178071928, guid: 6d7717b777916244cbc6fd46696880b5, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi 2
+    trafficPrefab: {fileID: 5387840284712704577, guid: 632d13d2f1771c048b4eb0e0a53fe0c4, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 3197030093801337992, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 6750814926299835140, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 1438387543030598821, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 2218233687030963846, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 7939802228666915848, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 3234014169295199387, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 4970062389533381704, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 7631841767403229183, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 1489589578591781148, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 1468576310213764587, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 3640916769884103808, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 5638215170505530085, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 8789916201806228063, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 6303682515023748226, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 1437128821002992145, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 553475049058157992, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 4331482290368730174, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 3082309015668781535, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 8182448769684105815, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 2407524527216843067, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 2265579061981828653, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop 1
+    trafficPrefab: {fileID: 1137635214077587605, guid: 527379b0da4de1447b939d42c857a090, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1 1
+    trafficPrefab: {fileID: 5734245501673791752, guid: 89d9acbdf81fb124ca80c7e96d88d3a9, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2 1
+    trafficPrefab: {fileID: 7906021584212147112, guid: cf063db148e040e488c92d4c3a001122, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar 1
+    trafficPrefab: {fileID: 2117495826753297488, guid: 75bd3c174dd3cea42b6ece61ab6200a0, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2 1
+    trafficPrefab: {fileID: 2042850901039855092, guid: 8fc7fea82d783b04baf15f9cd92ca2d9, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV 1
+    trafficPrefab: {fileID: 8434792388263671186, guid: c9601302af1be3f4ea504c73d9247c48, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi 1
+    trafficPrefab: {fileID: 1482007504435038449, guid: c6f89d108c6f5644cb586260f4f60de6, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 7203646804313959337, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 2411888705248682998, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 7309183665270971076, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 4083043175411249661, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 8257341817560914638, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 3849660021817638773, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 458896556634703010, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop 1
+    trafficPrefab: {fileID: 9088516530269623752, guid: 527379b0da4de1447b939d42c857a090, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1 1
+    trafficPrefab: {fileID: 5012723902109514756, guid: 89d9acbdf81fb124ca80c7e96d88d3a9, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2 1
+    trafficPrefab: {fileID: 6636884253733858687, guid: cf063db148e040e488c92d4c3a001122, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar 1
+    trafficPrefab: {fileID: 5902764731064321181, guid: 75bd3c174dd3cea42b6ece61ab6200a0, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2 1
+    trafficPrefab: {fileID: 2466424634303674134, guid: 8fc7fea82d783b04baf15f9cd92ca2d9, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV 1
+    trafficPrefab: {fileID: 7787398768379190307, guid: c9601302af1be3f4ea504c73d9247c48, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi 1
+    trafficPrefab: {fileID: 8208874439974172201, guid: c6f89d108c6f5644cb586260f4f60de6, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 7885591080115788660, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 168628613272564055, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 6410882120589440031, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 2913230600338422076, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 3158933283693067489, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 5790818107796883209, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 3568517478425394488, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 8825574251882448796, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 8970545804679804936, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 9055825060577727635, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 2378102751579532631, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 6968856703690391807, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 5248126148192883904, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 4643588657616405772, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Cop
+    trafficPrefab: {fileID: 2359573867633420370, guid: 8f56d597b9e6a004eac394f32f8fce17, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar1
+    trafficPrefab: {fileID: 5751571692766477254, guid: 2fd8ecf4863f3df459c47a6dd9e241c1, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_NormalCar2
+    trafficPrefab: {fileID: 1785298933203420725, guid: 5a345ddebbb15f0499cb706b6b579788, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar
+    trafficPrefab: {fileID: 754913293821370365, guid: bcc96b29ff7a9194dbb2d0e618e92093, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SportsCar2
+    trafficPrefab: {fileID: 8068692033208421309, guid: b7a040518e3c13542a9624fa6fc277ee, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_SUV
+    trafficPrefab: {fileID: 6667007805158091100, guid: 68f0776d80545794e9726643d545ec5f, type: 3}
+    enabled: 1
+    spawnWeight: 1
+  - displayName: TrafficCar_Taxi
+    trafficPrefab: {fileID: 9213017747170734887, guid: c9dbd3d6214ad1044acbfefd3e88a06e, type: 3}
+    enabled: 1
+    spawnWeight: 1
