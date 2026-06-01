@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 15df4362d83b73d499bcc0f820ed75d7
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Black_Metal_Trim_Texture
+    second: {fileID: 2100000, guid: e4f0f107706490245a9bc732f948eada, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Dark_Asphalt_Texture
+    second: {fileID: 2100000, guid: faf52701397516743be962fa151d3719, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Dark_Blue_Glass_Texture
+    second: {fileID: 2100000, guid: 19138e7c67705b0428d21ee1f3d19681, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Dark_Concrete_Wall_Texture
+    second: {fileID: 2100000, guid: d2b60a2f73cdd3841aa328241a480d0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Emissive_Cyan
+    second: {fileID: 2100000, guid: 29b364e1ac9321540a3b32614d4b63c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Emissive_Cyan.001
+    second: {fileID: 2100000, guid: 98276c9ec6e3ad64090dbf3ac73f7195, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Emissive_Magenta
+    second: {fileID: 2100000, guid: 98a717ff8597a634db63c2e98f5cef8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Emissive_Warm_Door_Light
+    second: {fileID: 2100000, guid: 6d773bc43dd976b4a92b1e106f87fd91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Emissive_Warm_Door_Light.001
+    second: {fileID: 2100000, guid: 73e329c26bf4d954e9a5e2b97bcc8d7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Emissive_Warm_Door_Light.002
+    second: {fileID: 2100000, guid: 1e5865f6919710f4d811879651b5f11e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_HVAC_Dark_Metal_Texture
+    second: {fileID: 2100000, guid: 63cfa21d276246e4185c448022fa3490, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Logo_Backplate_Dark
+    second: {fileID: 2100000, guid: e150b5cd1e4cce347988f45f98b5e791, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Office_Floor_Dark
+    second: {fileID: 2100000, guid: 235ca804338e69849900a39d7ceaa79d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Office_Plant_Dark_Green
+    second: {fileID: 2100000, guid: 0949467177b465e4b82567b63ce6b653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Roller_Shutter_Texture
+    second: {fileID: 2100000, guid: 78c8c690d7c75da47931d3facbd60bca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Rooftop_Tar_Texture
+    second: {fileID: 2100000, guid: bce7124c04ae989418e283cbd0bcc0fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_TN_Logo_Texture
+    second: {fileID: 2100000, guid: a1c6e2aaf5d698f4f818f138bc4a98c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TN_Tokyo_Nights_Garage_Sign_Texture
+    second: {fileID: 2100000, guid: 0c49cc33f095c98468f23429208c29c1, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: futuristic_glass_surface_with_misty_gradients
+    second: {fileID: 2800000, guid: 2a8527fba5d930d4e82e966452f07417, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gritty_asphalt_texture_close_up
+    second: {fileID: 2800000, guid: 4ee84f33c6b73884dab7acb7ba2e8b72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: industrial_concrete_wall_texture
+    second: {fileID: 2800000, guid: 1eb1f43b7fd6dee49b8474da9f6cb0d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: industrial_metal_panel_with_vent_grilles
+    second: {fileID: 2800000, guid: 34944b8c7d6ec1c4a937fbfa99d1740c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: industrious_weathered_surface_grid
+    second: {fileID: 2800000, guid: 9ee9478c56505ec4b9deb369abc847cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "industri\xEBle_metalen_wandtextuur"
+    second: {fileID: 2800000, guid: b86c33fe99550694da7de8c2d6ecb79b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: neon_tn_monogram_logo
+    second: {fileID: 2800000, guid: 1bd3081142027f547b4c170bc91ebcd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tokyo_nights_neon_logo
+    second: {fileID: 2800000, guid: 46f33338174dce843bbf4016a4c34c46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: weathered_metal_shutter_texture
+    second: {fileID: 2800000, guid: bb33a547cb261184d9dcf4e8afb437c2, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
