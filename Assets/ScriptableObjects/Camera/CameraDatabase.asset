@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4419648fb8c4f6848b20bda1c97679de, type: 3}
+  m_Name: CameraDatabase
+  m_EditorClassIdentifier: 
+  defaultSettings:
+    offset: {x: 0, y: 1.55, z: -4.35}
+    reverseOffset: {x: 0, y: 1.55, z: 4.35}
+    lookAtOffset: {x: 0, y: 0.9, z: 0}
+    followSpeed: 4.5
+    rotationSpeed: 4.2
+    lookAheadDistance: 3.2
+    reverseLookBehindDistance: 4.2
+    turnShiftAmount: 0.12
+    cameraRollAmount: 0.4
+    speedPullbackAmount: 0.45
+    baseFOV: 45
+    maxFOV: 45
+  vehicleDataVariants: []
+  vehicleTypeVariants:
+  - vehicleType: 1
+    settings:
+      offset: {x: 0, y: 1, z: -2.35}
+      reverseOffset: {x: 0, y: 1, z: 2.35}
+      lookAtOffset: {x: 0, y: 0, z: 0}
+      followSpeed: 8
+      rotationSpeed: 4.2
+      lookAheadDistance: 3.2
+      reverseLookBehindDistance: 4.2
+      turnShiftAmount: 0.12
+      cameraRollAmount: 0.4
+      speedPullbackAmount: 0.45
+      baseFOV: 72
+      maxFOV: 73
+  - vehicleType: 2
+    settings:
+      offset: {x: 0, y: 1, z: -2.35}
+      reverseOffset: {x: 0, y: 1, z: 2.35}
+      lookAtOffset: {x: 0, y: 0, z: 0}
+      followSpeed: 8
+      rotationSpeed: 4.2
+      lookAheadDistance: 3.2
+      reverseLookBehindDistance: 4.2
+      turnShiftAmount: 0.12
+      cameraRollAmount: 0.4
+      speedPullbackAmount: 0.45
+      baseFOV: 72
+      maxFOV: 73
+  - vehicleType: 3
+    settings:
+      offset: {x: 0, y: 1, z: -2.35}
+      reverseOffset: {x: 0, y: 1, z: 2.35}
+      lookAtOffset: {x: 0, y: 0, z: 0}
+      followSpeed: 8
+      rotationSpeed: 4.2
+      lookAheadDistance: 3.2
+      reverseLookBehindDistance: 4.2
+      turnShiftAmount: 0.12
+      cameraRollAmount: 0.4
+      speedPullbackAmount: 0.45
+      baseFOV: 72
+      maxFOV: 73
+  - vehicleType: 4
+    settings:
+      offset: {x: 0, y: 1.55, z: -2.35}
+      reverseOffset: {x: 0, y: 1.55, z: 2.35}
+      lookAtOffset: {x: 0, y: 0, z: 0}
+      followSpeed: 8
+      rotationSpeed: 4.2
+      lookAheadDistance: 3.2
+      reverseLookBehindDistance: 4.2
+      turnShiftAmount: 0.12
+      cameraRollAmount: 0.4
+      speedPullbackAmount: 0.45
+      baseFOV: 72
+      maxFOV: 73

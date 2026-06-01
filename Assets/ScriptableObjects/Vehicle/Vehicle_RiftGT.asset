@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234499fb9cb76ae4ba0d0d88a2cee6b4, type: 3}
+  m_Name: Vehicle_RiftGT
+  m_EditorClassIdentifier: 
+  vehicleId: riftgt
+  displayName: Rift GT
+  description: Fast and Agile
+  vehicleType: 1
+  gameplayPrefab: {fileID: 2499192796174427897, guid: 1cd816cb2b6575542913507184f5103b, type: 3}
+  aiPrefab: {fileID: 2336005437991399942, guid: db94fa73daed24b4286a62ef8ea04625, type: 3}
+  previewPrefab: {fileID: 5278930757143114733, guid: a4b4283e1df1ce547aca5a9c6f4d2442, type: 3}
+  previewPositionOffset: {x: 0, y: 0, z: 0}
+  previewRotationEuler: {x: 0, y: 0, z: 0}
+  previewScale: {x: 1, y: 1, z: 1}
+  unlockedByDefault: 1
+  overrideCameraSettings: 0
+  cameraSettings:
+    offset: {x: 0, y: 1.55, z: -4.35}
+    reverseOffset: {x: 0, y: 1.55, z: 4.35}
+    lookAtOffset: {x: 0, y: 0.9, z: 0}
+    followSpeed: 4.5
+    rotationSpeed: 4.2
+    lookAheadDistance: 3.2
+    reverseLookBehindDistance: 4.2
+    turnShiftAmount: 0.12
+    cameraRollAmount: 0.4
+    speedPullbackAmount: 0.45
+    baseFOV: 72
+    maxFOV: 80

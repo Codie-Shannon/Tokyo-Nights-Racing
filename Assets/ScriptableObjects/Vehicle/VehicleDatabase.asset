@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c6303eef6a3044d810009ca2528084, type: 3}
+  m_Name: VehicleDatabase
+  m_EditorClassIdentifier: 
+  vehicles:
+  - {fileID: 11400000, guid: 3c04a7a2f69c6d247bc0b5da147c3ca0, type: 2}
+  - {fileID: 11400000, guid: 215ca2e1400715647b205043f2c06a2e, type: 2}
+  - {fileID: 11400000, guid: bc30242348bc16a43abe511266d57448, type: 2}
+  - {fileID: 11400000, guid: ec2567dc615fc004ebc613c2f2bec8e0, type: 2}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234499fb9cb76ae4ba0d0d88a2cee6b4, type: 3}
+  m_Name: Vehicle_tokyotitan
+  m_EditorClassIdentifier: 
+  vehicleId: tokyotitan
+  displayName: Tokyo Titan
+  description: Blue / Purple and Heavy
+  vehicleType: 4
+  gameplayPrefab: {fileID: 4181977298955644743, guid: 6d3b05de7df82074386be9b83487dc03, type: 3}
+  aiPrefab: {fileID: 7106636877060793410, guid: e27c115147a9e3049bdcdc37162c5757, type: 3}
+  previewPrefab: {fileID: 6004300887341741748, guid: b52b707f13e32944688ec52ad4f1fa96, type: 3}
+  previewPositionOffset: {x: 0, y: 0, z: 0}
+  previewRotationEuler: {x: 0, y: 0, z: 0}
+  previewScale: {x: 1, y: 1, z: 1}
+  unlockedByDefault: 1
+  overrideCameraSettings: 0
+  cameraSettings:
+    offset: {x: 0, y: 1.55, z: -4.35}
+    reverseOffset: {x: 0, y: 1.55, z: 4.35}
+    lookAtOffset: {x: 0, y: 0.9, z: 0}
+    followSpeed: 4.5
+    rotationSpeed: 4.2
+    lookAheadDistance: 3.2
+    reverseLookBehindDistance: 4.2
+    turnShiftAmount: 0.12
+    cameraRollAmount: 0.4
+    speedPullbackAmount: 0.45
+    baseFOV: 72
+    maxFOV: 80
