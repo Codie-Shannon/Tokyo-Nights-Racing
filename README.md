@@ -1,17 +1,17 @@
 # Tokyo Nights Racing
 
-**Tokyo Nights Racing** is a Unity/C# arcade racing systems portfolio project built to demonstrate connected gameplay systems, data-driven architecture, vehicle management, race mode flow, freeroam traffic, settings persistence, scene flow, and custom editor tooling.
+**Tokyo Nights Racing** is a Unity/C# arcade racing systems portfolio project built to demonstrate connected gameplay systems, data-driven architecture, AI racing, vehicle management, freeroam traffic, settings persistence, scene flow, and custom editor tooling.
 
-> This is a technical portfolio prototype, not a commercial game release. The focus is on demonstrating systems architecture, gameplay programming, race systems, tools, and scene flow.
+> This is a technical portfolio prototype, not a commercial game release. The focus is on demonstrating systems architecture, gameplay programming, AI, tools, and scene flow.
 
 ## At a Glance
 
 - **Engine:** Unity 2022.3 LTS
 - **Language:** C#
 - **Project Type:** Arcade racing systems prototype
-- **Focus:** Gameplay systems, data-driven race setup, traffic, UI, settings, scene flow, and tooling
-- **Portfolio Status:** Shipped v0.1
+- **Focus:** Gameplay systems, AI, data-driven race setup, traffic, UI, settings, scene flow, and tooling
 - **Status:** Playable portfolio build
+- **Portfolio Status:** Shipped v0.1
 
 ## Quick Review Guide
 
@@ -20,13 +20,13 @@ For a fast review, start with:
 1. Watch the gameplay demo video.
 2. Review the Technical Highlights section.
 3. Check the screenshots.
-4. Inspect the vehicle database, race mode database, checkpoint progress, traffic spawner, settings persistence, and scene return systems.
+4. Inspect the vehicle database, race mode database, AI racing, checkpoint progress, traffic spawner, settings persistence, and scene return systems.
 
 Recommended code areas:
 
 - Vehicle / garage systems.
 - Race mode and race loading systems.
-- Checkpoint progress and race position systems.
+- AI waypoint and checkpoint progress systems.
 - Traffic spawning systems.
 - Settings and audio persistence.
 - Scene return-state handling.
@@ -39,19 +39,19 @@ Gameplay demo video:
 
 ## Overview
 
-Tokyo Nights Racing is an arcade racing prototype featuring a main menu carousel, garage vehicle selection, race modes, checkpoint-based race progress, freeroam traffic, configurable settings, audio routing, loading screens, and scene return flows.
+Tokyo Nights Racing is an arcade racing prototype featuring a main menu carousel, garage vehicle selection, race modes, checkpoint-based race progress, high-speed waypoint AI, freeroam traffic, configurable settings, audio routing, loading screens, and scene return flows.
 
-The project was built around a systems-focused goal: create a playable Unity racing project where vehicles, races, traffic, menus, settings, and scene transitions are all connected through reusable data-driven systems.
+The project was built around a systems-focused goal: create a playable Unity racing project where vehicles, races, AI, traffic, menus, settings, and scene transitions are all connected through reusable data-driven systems.
 
 ## Why I Built This
 
-I built Tokyo Nights Racing as a systems-focused Unity portfolio project. The goal was not just to make a racing prototype, but to build a connected project with data-driven vehicles, race modes, freeroam traffic, settings, scene loading, and custom tooling.
+I built Tokyo Nights Racing as a systems-focused Unity portfolio project. The goal was not just to make a racing prototype, but to build a connected project with data-driven vehicles, race modes, AI opponents, freeroam traffic, settings, scene loading, and custom tooling.
 
 The project was designed to show how I structure and debug larger systems, especially where multiple scenes, saved data, UI, gameplay, physics, and AI all need to work together.
 
 ## My Role
 
-I designed, implemented, debugged, and integrated the main gameplay systems, race flow, vehicle database, garage flow, traffic system, settings, UI logic, scene return handling, and supporting editor tools.
+I designed, implemented, debugged, and integrated the main gameplay systems, race flow, AI behavior, vehicle database, garage flow, traffic system, settings, UI logic, scene return handling, and supporting editor tools.
 
 The project also involved replacing risky prototype assets, cleaning the project for public release, organizing scripts, fixing missing references, preparing screenshots, and documenting the work for GitHub.
 
@@ -60,7 +60,9 @@ The project also involved replacing risky prototype assets, cleaning the project
 - Built a ScriptableObject-driven vehicle and race mode architecture.
 - Created a garage/equip/save system using separate gameplay, preview, and AI prefabs.
 - Built a main menu Race Modes launcher that selects compatible races based on the equipped vehicle.
-- Implemented checkpoint-based race progress for consistent race flow.
+- Implemented checkpoint-based race progress shared by both player and AI.
+- Built custom waypoint-based racing AI capable of high-speed racing on curved tracks.
+- Separated AI steering from official race progress to avoid waypoint/checkpoint ranking bugs.
 - Added freeroam traffic with node-based spawning, traffic vehicle database selection, and density settings.
 - Implemented scene return flows for Main Menu, Garage, RaceScene, and Freeroam.
 - Added persistent settings for audio, quality, fullscreen, and traffic density.
@@ -75,7 +77,7 @@ This project demonstrates:
 - C# gameplay systems programming.
 - Unity scene flow and state management.
 - Data-driven architecture using ScriptableObjects.
-- Checkpoint-based race logic.
+- AI behavior and checkpoint-based race logic.
 - UI/menu systems and saved settings.
 - Physics-based vehicle setup and debugging.
 - Debugging complex multi-system bugs.
@@ -89,6 +91,7 @@ The most important systems to review in the project are:
 - Vehicle database and garage flow.
 - Race mode database and main menu race launcher.
 - Race position/checkpoint system.
+- AI waypoint controller and checkpoint progress separation.
 - Traffic spawner and traffic vehicle database.
 - Scene loading and return-state handling.
 - Settings menu and persistent audio settings.
@@ -102,7 +105,9 @@ The most important systems to review in the project are:
 - ScriptableObject-based race mode database.
 - Main menu Race Modes launcher that selects compatible races based on the equipped vehicle.
 - Checkpoint-based race progress and position tracking.
-- Grid start system for race launches.
+- Custom waypoint-based racing AI.
+- AI uses waypoints for driving and checkpoints for official race progress.
+- Grid start system for player and AI racers.
 - Freeroam traffic system with traffic vehicle database and spawn nodes.
 - Traffic density setting with 50 / 100 / 150 / 200 density options.
 - Settings menu with audio, quality, fullscreen, and traffic density.
@@ -137,9 +142,9 @@ The most important systems to review in the project are:
 
 ![Race Grid Start](Screenshots/06-race-grid-start.png)
 
-### Road Race
+### High-Speed AI Racing
 
-![Road Race](Screenshots/07-ai-racing-road.png)
+![AI Racing](Screenshots/07-ai-racing-road.png)
 
 ### Vehicle Class Racing
 
@@ -159,17 +164,17 @@ The most important systems to review in the project are:
 
 ## Major Problems Solved
 
-### Race Pathing vs Race Progress
+### AI Waypoints vs Race Progress
 
-One major architecture issue was keeping path-following/setup data separate from official race progress. Race progress needs a single source of truth so ranking and completion logic stay consistent.
+One major issue was that AI waypoint progress was being treated like race progress, while the player used checkpoint progress. This caused incorrect race positions when AI used extra waypoints for smoother driving.
 
-The final approach separates the systems:
+The final fix separated the systems:
 
-- Pathing/setup data is used for driving or route guidance.
+- AI waypoints are used for steering only.
 - Checkpoints are used for official race progress.
-- Racers are ranked using the same checkpoint-based `RacerProgress` system.
+- Player and AI racers are ranked using the same checkpoint-based `RacerProgress` system.
 
-This keeps race position logic consistent even when extra route/helper points are used in the scene.
+This allows AI cars to use more waypoint transforms for smoother driving without corrupting race position.
 
 ### Scene Return State Bugs
 
@@ -198,14 +203,14 @@ The final fix:
 
 ### Correct AI Vehicle Selection
 
-Race Modes launched from the main menu originally needed stricter vehicle-type filtering. The fix was to filter race/vehicle setup by the current race’s required vehicle type.
+Race Modes launched from the main menu originally loaded incorrect AI vehicles. The fix was to filter AI vehicle selection by the current race’s required vehicle type.
 
 Example:
 
-- Road race → Road vehicle setup.
-- OffRoad race → OffRoad vehicle setup.
-- AllTerrain race → AllTerrain vehicle setup.
-- MonsterTruck race → MonsterTruck vehicle setup.
+- Road race → Road AI vehicles.
+- OffRoad race → OffRoad AI vehicles.
+- AllTerrain race → AllTerrain AI vehicles.
+- MonsterTruck race → MonsterTruck AI vehicles.
 
 ## Systems Built
 
@@ -288,7 +293,7 @@ The race system includes:
 - Return-to-main-menu flow.
 - Return-to-freeroam-marker flow.
 
-The race scene is launched using race data passed through a static launch-data bridge. Once the race scene loads, the auto-start system finds the correct race definition, applies the requested track variant, prepares race vehicles, and starts the race.
+The race scene is launched using race data passed through a static launch-data bridge. Once the race scene loads, the auto-start system finds the correct race definition, applies the requested track variant, prepares AI vehicles, and starts the race.
 
 ### Checkpoint-Based Race Progress
 
@@ -306,24 +311,32 @@ Each racer has a `RacerProgress` component that tracks:
 
 The race position manager sorts racers using checkpoint/lap progress. This prevents AI waypoint count from corrupting race position.
 
-### Race Setup and Route Support
+### AI Racing System
 
-The race scenes use checkpoint gates and setup data to keep race progress consistent.
+The AI system uses waypoints for steering and checkpoints for official race progress.
 
-Race setup features include:
+AI features include:
 
-- Vehicle-class-specific race setup.
-- Grid start preparation.
-- Checkpoint gate progress.
-- Track variant selection.
-- Race scene launch data.
-- Race results and return flow.
+- Waypoint following.
+- Lane offsets.
+- Optional randomized lane offsets.
+- Start boost.
+- Front vehicle detection.
+- Side vehicle awareness.
+- Side nudge avoidance.
+- Side grip correction.
+- Stuck recovery.
+- Fall recovery.
+- Vehicle-class-specific AI prefabs.
+- High-speed racing on curved tracks.
 
-A key architecture decision was separating route/helper data from official race progress:
+A key architecture decision was separating AI driving from race progress:
 
-- Helper/route points can support scene setup and driving flow.
+- AI waypoints are used only for steering.
 - Checkpoint gates are used for race progress and ranking.
-- Race position is based on checkpoint progress rather than unrelated helper transforms.
+- Player and AI racers both use the same checkpoint system.
+
+This allows the AI to use extra waypoints for smoother driving without affecting race position.
 
 ### Race Position System
 
@@ -336,7 +349,7 @@ The race position manager ranks racers using:
 5. Segment progress.
 6. Distance to next checkpoint as a final tie-breaker.
 
-This keeps race progress consistent even when helper route data has a different count from checkpoint gates.
+This keeps player and AI progress consistent even when AI uses more waypoints than there are checkpoints.
 
 ### Freeroam and Mission Marker System
 
@@ -505,17 +518,17 @@ This made it easier to support:
 - Garage vehicle selection.
 - Main menu race launching.
 
-### Route Data vs Race Progress
+### AI Steering vs Race Progress
 
-A major bug fix involved separating route/helper data from official race progress.
+A major bug fix involved separating AI steering from race progress.
 
 The final architecture is:
 
-- Helper route points = setup/driving support.
+- Waypoints = AI steering.
 - Checkpoints = official race progress.
 - RacePositionManager = ranks racers using checkpoint progress only.
 
-This keeps race ranking stable even when the scene contains extra helper points.
+This allows smoother AI paths without breaking race ranking.
 
 ### Scene Transition State Management
 
@@ -542,7 +555,7 @@ The project was cleaned for public GitHub upload by:
 
 ## What I Learned
 
-This project reinforced the importance of separating systems by responsibility. A major example was separating route/helper data from race checkpoint progress. Once checkpoints became the single source of truth for race progress, the race ranking system became much more reliable.
+This project reinforced the importance of separating systems by responsibility. A major example was separating AI waypoint steering from race checkpoint progress. Once waypoints were treated only as steering targets and checkpoints became the single source of truth for race progress, the race ranking system became much more reliable.
 
 The project also involved debugging several scene-transition issues, which highlighted the importance of clearing temporary state after scene loads and keeping return-flow logic isolated.
 
@@ -572,7 +585,7 @@ For a short gameplay demo video, the project can be shown in this order:
 3. Garage vehicle selection.
 4. Race Modes launch.
 5. Race grid start.
-6. Race gameplay on a curved track.
+6. AI racing on a curved track.
 7. Results screen.
 8. Return to main menu.
 9. Freeroam traffic.
@@ -599,7 +612,8 @@ Current status:
 - Garage vehicle selection works.
 - Race Modes launch works.
 - RaceScene flow works.
-- Race position/checkpoint tracking works.
+- AI racing works.
+- Race position tracking works.
 - Results screen works.
 - Main menu return flow works.
 - Freeroam traffic works.
@@ -615,6 +629,7 @@ This project is a portfolio prototype, not a finished commercial racing game.
 Known limitations and future polish areas include:
 
 - Vehicle scale and art direction could be normalized further.
+- AI racecraft could be improved with more advanced overtaking and blocking behavior.
 - Vehicle physics could be tuned further per vehicle class.
 - Traffic behavior could be expanded with intersections and more advanced rules.
 - UI visuals could receive more final-art polish.
@@ -628,6 +643,8 @@ Possible future improvements:
 - Add more race types.
 - Add career/progression structure.
 - Add vehicle unlocks.
+- Add better AI corner-speed prediction.
+- Add more advanced obstacle avoidance.
 - Add more traffic behaviors.
 - Add race rewards.
 - Add persistent player profile data.
