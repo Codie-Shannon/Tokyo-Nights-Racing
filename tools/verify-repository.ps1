@@ -326,6 +326,13 @@ $TextExtensions = @(
 
 $TextFiles = @(
     foreach ($TrackedFile in $TrackedFiles) {
+        $NormalisedTrackedFile = $TrackedFile.Replace('\', '/')
+
+        # Do not scan this verifier's own detection regex definitions.
+        if ($NormalisedTrackedFile -eq 'tools/verify-repository.ps1') {
+            continue
+        }
+
         $FullPath = Join-Path $Root $TrackedFile
 
         if (-not (Test-Path -LiteralPath $FullPath -PathType Leaf)) {
