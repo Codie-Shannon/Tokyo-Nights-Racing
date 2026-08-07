@@ -1,16 +1,17 @@
 {
   "dependencies": {
     "com.atteneder.gltfast": {
-      "version": "file:C:/Users/Codie/Downloads/Cars-Prototype-Assets/Packages/glTFast-openupm",
+      "version": "6.14.1",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "com.unity.modules.jsonserialize": "1.0.0",
         "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.mathematics": "1.2.6",
         "com.unity.burst": "1.8.24",
         "com.unity.collections": "1.2.4"
-      }
+      },
+      "url": "https://package.openupm.com"
     },
     "com.unity.burst": {
       "version": "1.8.24",

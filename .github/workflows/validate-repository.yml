@@ -1,0 +1,31 @@
+name: Validate Tokyo Nights Racing
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Repository and evidence validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Validate project, package boundary, and evidence
+        shell: pwsh
+        run: ./tools/verify-repository.ps1 -SkipGitCleanCheck
+
+      - name: Upload validation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: tokyo-nights-repository-validation
+          path: artifacts/validation/repository-verification.txt
+          if-no-files-found: error

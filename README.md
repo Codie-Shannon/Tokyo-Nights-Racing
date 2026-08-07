@@ -1,5 +1,7 @@
 # Tokyo Nights Racing
 
+[![Validate Tokyo Nights Racing](https://github.com/Codie-Shannon/Tokyo-Nights-Racing/actions/workflows/validate-repository.yml/badge.svg)](https://github.com/Codie-Shannon/Tokyo-Nights-Racing/actions/workflows/validate-repository.yml)
+[![Release](https://img.shields.io/github/v/release/Codie-Shannon/Tokyo-Nights-Racing)](https://github.com/Codie-Shannon/Tokyo-Nights-Racing/releases)
 **Tokyo Nights Racing** is a Unity/C# arcade racing systems portfolio project built to demonstrate connected gameplay systems, data-driven architecture, AI racing, vehicle management, freeroam traffic, settings persistence, scene flow, and custom editor tooling.
 
 > This is a technical portfolio prototype, not a commercial game release. The focus is on demonstrating systems architecture, gameplay programming, AI, tools, and scene flow.
@@ -11,7 +13,7 @@
 - **Project Type:** Arcade racing systems prototype
 - **Focus:** Gameplay systems, AI, data-driven race setup, traffic, UI, settings, scene flow, and tooling
 - **Status:** Playable portfolio build
-- **Portfolio Status:** Shipped v0.1
+- **Portfolio Status:** Closed at v0.1.0
 
 ## Quick Review Guide
 
@@ -680,3 +682,24 @@ This repository is provided as a portfolio project.
 Source code written by the author is available under the MIT License unless otherwise stated.
 
 Third-party assets, models, textures, audio, and packages remain under their original licenses. Check individual asset sources/licenses before reuse.
+
+## Portfolio Release Status
+
+Tokyo Nights Racing is closed at **v0.1.0** as a playable Unity/C# systems
+portfolio prototype.
+
+The release preserves the original gameplay work, eleven approved evidence
+screenshots, and gameplay demonstration while adding machine-independent
+package resolution, exact-editor reproduction, repository validation,
+security boundaries, and maintenance-only project status.
+
+- [Reproduction guide](Docs/REPRODUCTION.md)
+- [Current bucket](Docs/CURRENT_BUCKET.md)
+- [Screenshot Group 01](Screenshots/README.md)
+- [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+Future Mission Marker, Vehicle Setup, and Traffic products are separate
+commercial-tool projects. They do not reopen this repository as an ongoing
+game-development backlog.
+
+Created and developed by **Codie Shannon**.

@@ -1,0 +1,14 @@
+{
+    "version":  "0.1.0",
+    "releaseName":  "Portfolio Build",
+    "status":  "closed",
+    "unityEditor":  "2022.3.62f1",
+    "gltfPackage":  "com.atteneder.gltfast",
+    "gltfVersion":  "6.14.1",
+    "enabledBuildScenes":  5,
+    "screenshotGroups":  1,
+    "screenshots":  11,
+    "gameplayDemo":  "https://youtu.be/0I_Kn9aRTGg",
+    "commercialGameClaim":  false,
+    "futureUnityToolsAreSeparateProjects":  true
+}
